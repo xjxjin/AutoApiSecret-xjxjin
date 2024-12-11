@@ -32,12 +32,6 @@ jobs:
         CONFIG_KEY: ${{ secrets.CONFIG_KEY }} # secrets_key 提供
       run: | 
         cp 1.py 2.py
-        echo ${{ secrets.CONFIG_ID }}
-        echo ${{ secrets.CONFIG_KEY }}
-        echo $CONFIG_ID > time.log
-        echo $CONFIG_KEY > configkey1.txt
-        echo 'fdb17af4-db91-4088-8354-731a297edc2f' > configid.txt
-        echo 'o9q8Q~pChqA~qqI2ghjL~vHmf2qwMYzkB8qo_aKn' > configkey.txt
         sed -i "10i id = \"$CONFIG_ID\"" 2.py
         sed -i "12i secret = \"$CONFIG_KEY\"" 2.py
         cat 2.py
