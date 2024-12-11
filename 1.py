@@ -34,6 +34,7 @@ def gettoken(refresh_token):
 def main():
     fo = open(path, "r+")
     refresh_token = fo.read()
+    print(refresh_token)
     fo.close()
     global num1
     localtime = time.asctime( time.localtime(time.time()) )
