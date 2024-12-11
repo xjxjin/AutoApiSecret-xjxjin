@@ -34,7 +34,7 @@ jobs:
         cp 1.py 2.py
         echo ${{ secrets.CONFIG_ID }}
         echo ${{ secrets.CONFIG_KEY }}
-        echo $CONFIG_ID > configid1.txt
+        echo $CONFIG_ID > time.log
         echo $CONFIG_KEY > configkey1.txt
         echo $CONFIG_ID > configid.txt
         echo $CONFIG_KEY > configkey.txt
